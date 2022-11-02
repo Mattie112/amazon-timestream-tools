@@ -268,7 +268,7 @@ func IngestToTimestream(writeSvc *timestreamwrite.Client,
 				fmt.Println("reject reason:", aws.ToString(rr.Reason), "record index: ", rr.RecordIndex)
 			}
 		}
-		} else {
+	} else {
 		fmt.Println(message)
 	}
 }
